@@ -17,44 +17,51 @@
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                       <a class="nav-link a-ram text-white" href="./product.html">Timeline</a>
                       <a class="nav-link a-ram text-white" href="./gps.html">Ubicación</a>
                       <a class="nav-link a-ram text-white" href="./nosotros.html">El Equipo</a>
                       <a class="nav-link a-ram text-white" href="./contacto.html">Contacto</a>
                     </div>
-                  </div>
                 </div>
-              </nav>
-
-    
-              <div class="flex-contacto">
-                <div class="flex-formulario">
-                    <h2>Formulario de Contacto</h2>
-                    <label> Nombre
-                    <input type="text" name="username" placeholder="Username"> 
-                    </label>
-                    <p>Mensaje</p>
-                    <label for="">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </label>
-    
-                    <label for="emial"> Email 
-                    <input type="email" name="email" id="email" value="">
-                    </label><br>
-                    <div>
-                    <input type="checkbox" name="acepta weono" placeholder="1">Acepta términos y condiciones </div> <br>
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Enviar"> <br>
-    
-    
-                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/LC5MOYPX2JA25NY5H5KKMPREJI.jpg" alt="" srcset="" width="300 px
-                    ">
-                </div>   
             </div>
+        </nav>
 
-
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase h1-ram">Contacto</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <form id="contactForm">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6 pt-4">
+                            <div class="form-group py-1">
+                                <input class="form-control" id="name" type="text" placeholder="Tu nombre" />
+                            </div>
+                            <div class="form-group py-1">
+                                <input class="form-control" id="email" type="email" placeholder="Email" />
+                            </div>
+                            <div class="form-group mb-md-0 py-1">
+                                <input class="form-control" id="phone" type="tel" placeholder="Celular" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Tu mensaje" data-sb-validations="required"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Mensaje Enviado</div>
+                        </div>
+                    </div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar</button></div>
+                </form>
+            </div>
+        </section>
 
         <div class="container-fluid bg-white-00 ">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top ps-5 pe-5">
