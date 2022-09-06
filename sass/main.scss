@@ -1,0 +1,39 @@
+@import "fonts";
+
+*{
+	font-family: Raleway;
+}
+
+body {
+    background: rgb(128,0,0);
+    background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, rgb(255, 237, 80) 33%, rgb(176, 115, 255) 70%, rgb(112, 24, 24) 100%);
+}
+
+.selector-for-some-widget {
+	box-sizing: content-box;
+  }
+
+.navbar-ram {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: 900;
+	font-size: 2rem;
+  padding-left: 15%;
+  /* border-bottom: 4px solid black; */
+}
+
+
+.h1-ram {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: 900;
+	font-size: 4rem;
+  /* border-bottom: 4px solid black; */
+}
+
+.a-ram {
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
