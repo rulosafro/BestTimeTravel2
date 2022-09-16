@@ -1,11 +1,14 @@
 @import "fonts";
+@import "vars-ram";
+@import "responsive-ram";
+
 
 *{
 	font-family: Raleway;
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, rgb(255, 179, 80) 33%, rgb(243, 62, 49) 70%,rgb(134, 231, 231)) 100%);
+    background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, rgb(255, 179, 80) 33%, rgb(243, 62, 49) 70%,rgb(134, 231, 231) 100%);
 }
 
 .selector-for-some-widget {
@@ -36,3 +39,9 @@ body {
   color: black;
 }
 
+.ram1 {
+	background-color: $color-1;
+	li{
+		border: black 2px;
+	}
+}
