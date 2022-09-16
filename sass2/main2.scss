@@ -29,9 +29,7 @@ footer, header, hgroup, menu, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    /* list-style: none; */
-}
+
 blockquote, q {
     quotes: none;
 }
@@ -86,12 +84,6 @@ body {
     justify-content: center;
 }
 
-header {
-    img {
-
-    }
-}
-
 /* MAIN MAIN MAIN MAIN MAIN MAIN */
 
 main {
@@ -100,15 +92,15 @@ main {
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
-        height: 650px;
+        height: 500px;
         width: 100vw;
         object-fit:cover;
-        object-position: center;
+        object-position: top;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         object-fit: center;
-        object-position: center bottom;
+        // object-position: center top;
     }
     div {
         position: absolute;
@@ -124,7 +116,6 @@ main {
         border-radius: 10px;
         a {
             background: -webkit-linear-gradient(rgb(214, 128, 16), rgb(255, 97, 97), red);
-            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             border-bottom: 5px solid rgb(167, 43, 43);
         }
@@ -134,8 +125,8 @@ main {
 
 /* FLEX 1 */
 
-.flex-container {
-	width: auto;
+.flex.container {
+	width: 80vw;
 	height: auto;
 	display: flex;
 	flex-flow: column wrap;
@@ -175,7 +166,7 @@ main {
                 margin-left: auto;
                 margin-right: auto;
                 justify-content: center;
-                height: 650px;
+                height: 500px;
                 width: 100vw;
                 object-fit:cover;
                 object-position: center;
@@ -184,7 +175,7 @@ main {
                 background-size: cover;
                 z-index: 1;
                 object-fit: center;
-                object-position: center bottom;
+                object-position: center;
             }
     }
 

@@ -32,9 +32,6 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  /* list-style: none; */
-}
 
 blockquote, q {
   quotes: none;
@@ -181,7 +178,6 @@ main div {
 
 main div a {
   background: -webkit-linear-gradient(rgb(214, 128, 16), rgb(255, 97, 97), red);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 5px solid rgb(167, 43, 43);
 }

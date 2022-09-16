@@ -40,4 +40,9 @@ body {
   font-weight: bolder;
   text-decoration: none;
   color: black;
+}
+
+.ramaimg {
+  background-image: url(../images/doc.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

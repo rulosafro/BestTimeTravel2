@@ -38,3 +38,11 @@ body {
   color: black;
 }
 
+.ramaimg {
+	background {
+		image: url(../images/doc.jpg);
+		size: cover;
+		position: bottom;
+	object-fit: bottom;
+	align-self: bottom;
+}
