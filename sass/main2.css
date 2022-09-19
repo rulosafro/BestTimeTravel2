@@ -132,6 +132,7 @@ link {
 
 body {
   background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, #ffb350 33%, #f33e31 70%, #86e7e7 100%);
+  color: black;
 }
 
 .boxOperaciones {

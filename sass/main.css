@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .fram1 {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 600;
   font-size: 2rem;
   margin: 0 auto;
@@ -12,7 +12,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, rgb(255, 179, 80) 33%, rgb(243, 62, 49) 70%, rgb(134, 231, 231) 100%);
+  background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, #ffb350 33%, #f33e31 70%, #86e7e7 100%);
 }
 
 .selector-for-some-widget {
@@ -21,7 +21,7 @@ body {
 
 .navbar-ram {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 900;
   font-size: 2rem;
   padding-left: 15%;
@@ -30,7 +30,7 @@ body {
 
 .h1-ram {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
   font-weight: 900;
   font-size: 4rem;
   /* border-bottom: 4px solid black; */
@@ -42,7 +42,10 @@ body {
   color: black;
 }
 
-.ramaimg {
-  background-image: url(../images/doc.jpg);
-  background-size: cover;
-}/*# sourceMappingURL=main.css.map */
+.ramaimg background {
+  image: url(../images/doc.jpg);
+  size: cover;
+  position: bottom;
+  object-fit: bottom;
+  align-self: bottom;
+}

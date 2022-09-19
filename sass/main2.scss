@@ -67,18 +67,6 @@ $red-social: (
     }
 }
 
-$colores: (
-    main: tomato,
-    base: grey,
-    back: black,
-)
-
-.colores-mapa {
-    background: map-get($colores, base) ;
-}
-
-
-
 .h1-ram {
     text-decoration: none;
 	color: rgb(0, 0, 0);
@@ -86,6 +74,30 @@ $colores: (
 	font-size: 4rem;
     /* border-bottom: 4px solid black; */
 }
+
+//extend
+.extend {
+    background-color: black;
+    color: white;
+
+}
+
+.extend--color {
+    @extend .extend;
+    background-color: blue;
+}
+
+//mixin
+@mixin boton {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid tomato;
+}
+
+.btn--default {
+    @include btn;
+}
+
 
 .a-ram {
   font-weight: bolder;
