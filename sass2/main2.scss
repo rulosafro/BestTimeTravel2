@@ -1,57 +1,7 @@
-/*--------------- Reset Css ---------------*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: Raleway;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-link {
-    display: none;
-}
-
-/*--------------- Reset Css ---------------*/
-
+@import "reset";
 @import "/sass/fonts";
 @import "dimensiones";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "/sass2/sassReal.sass";
 
 *{
     font-family: Raleway;
@@ -59,7 +9,67 @@ link {
 
 body {
     background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, rgb(255, 179, 80) 33%, rgb(243, 62, 49) 70%,rgb(134, 231, 231) 100%);
+    color: black;
 }
+
+//vars
+$colorFondo: FFF;
+$boxResponsive: 320px;
+
+// Operaciones 
+.boxOperaciones {
+    background-color: $colorFondo;
+    padding: 20px;
+    width: $boxResponsive;
+}
+
+//Condicionales
+$colorTitulo: dark;
+
+h1 {
+    @if $colorTitulo == dark {
+        color: white;
+        background-color: dark;
+    } @else if $colorTitulo == light{
+        color: blue;
+        background: aquamarine;
+    } @else {
+        color: tomato;
+        border: 2px solid violet;
+    }
+}
+
+Ciclo For
+@for $i from 1 to 13 {
+    .col-#{$i}{
+    width: 100% / $i;
+    }
+}
+
+
+/* Each */
+@each $color in red, green, blue {
+    .bg-#{$background} {
+    background-color: $background;
+    color: #($color);
+    }
+}
+
+$red-social: (
+    fb: blue,
+    ig: violet,
+    tw: skyblue,
+);
+
+@each $nombre, $valor in $red-social {
+    .icon-#{$nombre} {
+        background-color: $valor;
+    }
+}
+
+
+
+
 
 .h1-ram {
     text-decoration: none;
@@ -101,67 +111,66 @@ main {
         background-size: cover;
         object-fit: center;
         // object-position: center top;
-    }
-    div {
-        position: absolute;
-        top: 450px;
-        left: 10%;
-        color: white;
-        background-color: #77777775;
-        z-index: 2;
-        font-weight: 900;
-        font-size: 30px;
-        text-decoration: none;
-        border: solid 20px transparent;
-        border-radius: 10px;
-        a {
-            background: -webkit-linear-gradient(rgb(214, 128, 16), rgb(255, 97, 97), red);
-            -webkit-text-fill-color: transparent;
-            border-bottom: 5px solid rgb(167, 43, 43);
+        div {
+            position: absolute;
+            top: 450px;
+            left: 10%;
+            color: white;
+            background-color: #77777775;
+            z-index: 2;
+            font-weight: 900;
+            font-size: 30px;
+            text-decoration: none;
+            border: solid 20px transparent;
+            border-radius: 10px;
+            a {
+                background: -webkit-linear-gradient(rgb(214, 128, 16), rgb(255, 97, 97), red);
+                -webkit-text-fill-color: transparent;
+                border-bottom: 5px solid rgb(167, 43, 43);
+            }
         }
     }
     
 }
 
 /* FLEX 1 */
-
-.flex.container {
-	width: 80vw;
-	height: auto;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-evenly;
-	align-items: stretch;
-	align-content: center;
-	flex-basis: auto;
-	margin-right:auto;
-    margin-left:auto;
-	border-radius: 5px;
-
-    .flex-item {
+.flex {
+    &.container {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: center;
+        flex-basis: auto;
+        margin-right:auto;
+        margin-left:auto;
+        border-radius: 5px;
+        
+    &-item {
         margin-top: 10px;
         width: auto;
         height: auto;
         justify-content: center;
         margin-inline: 10px;
-        .flex-item-item {
-            margin-top: 10px;
-            width: auto;
-            height: 28vh;
-            justify-content: center;
-            margin-right:auto;
-            margin-left:auto;
-        }
-        
-        .flex-item-item.especial {
-            display: none;
-        }
-        
+    }
+    
+    &-item-item {
+        margin-top: 10px;
+        width: auto;
+        height: 28vh;
+        justify-content: center;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    
+    &-item-item.especial {
+        display: none;
         p {
             padding-top: 10px;
             padding-bottom: 10px;
-        }
-        img{
+            img{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -177,9 +186,10 @@ main {
                 object-fit: center;
                 object-position: center;
             }
+        }
     }
-
-    .flex-card {
+    
+    &-card {
         margin-top: 10px;
         display: flex;
         flex-flow: row;
@@ -203,7 +213,7 @@ main {
             margin-inline: 10px;
         }
     }
-    
+    }
 }
 
 .flex-titulo {
@@ -253,5 +263,3 @@ footer {
     border-radius: 8px;
     /* border: solid 20px trasn; */
 }
-
-
