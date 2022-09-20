@@ -204,15 +204,29 @@ section {
     padding-bottom: 10px;
     display: flex;
     flex-flow: row;
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
+    justify-items: space-between;
 }
 
 .raro2 {
     @include mix1;
-    background: aqua;
+    // background: aqua;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 10px;
+    img {
+        object-fit: cover;
+        // object-position: top;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        background-size: cover;
+        object-fit: contain;
+        max-height:auto; 
+        max-width:300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .flex-titulo {
@@ -223,6 +237,17 @@ section {
     font-size: 40px;
     color: map-get($colores,principal);
 }
+
+.flex-subtitulos {
+    text-align: center;
+    // padding-top: 40px;
+    font-weight: 200;
+    font-size: 1rem;
+    color: map-get($colores,principal);
+}
+
+// Uso de media query
+
 
 //////////////////////////////////////////////////
 
@@ -256,7 +281,7 @@ footer {
 	width: 100vw;
 	text-align: center;
 	display: flex;
-	flex-flow: row  wrap;
+	flex-flow: row ;
 	margin-right:auto;
     margin-left:auto;
 	justify-content: center;

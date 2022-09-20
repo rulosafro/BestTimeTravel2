@@ -60,7 +60,7 @@ link {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 998px) {
   * {
     transition: 0.5s;
   }
@@ -77,6 +77,15 @@ link {
   }
   .flex-container .flex-item .flex-item-item {
     height: 400px;
+  }
+  .raro1 {
+    flex-flow: column;
+  }
+  .raro2 {
+    flex-flow: column;
+  }
+  .mix1 {
+    flex-flow: column;
   }
 }
 @media (min-width: 1000px) {
@@ -275,8 +284,9 @@ main img div a {
   padding-bottom: 10px;
   display: flex;
   flex-flow: row;
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto;
+  justify-items: space-between;
 }
 
 .raro2 {
@@ -284,9 +294,18 @@ main img div a {
   width: auto;
   display: flex;
   flex-flow: row wrap;
-  background: aqua;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 10px;
+}
+.raro2 img {
+  object-fit: cover;
+  background-size: cover;
+  object-fit: contain;
+  max-height: auto;
+  max-width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .flex-titulo {
@@ -295,6 +314,13 @@ main img div a {
   text-align: center;
   font-weight: 900;
   font-size: 40px;
+  color: white;
+}
+
+.flex-subtitulos {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
   color: white;
 }
 
@@ -327,7 +353,7 @@ footer {
   width: 100vw;
   text-align: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
