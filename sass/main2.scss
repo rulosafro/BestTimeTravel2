@@ -9,100 +9,34 @@
 
 body {
     background: linear-gradient(to bottom, rgba(255, 129, 129, 0.8) 0%, rgb(255, 179, 80) 33%, rgb(243, 62, 49) 70%,rgb(134, 231, 231) 100%);
-    color: black;
 }
 
-//vars
-$colorFondo: #FFF;
-$boxResponsive: 320px;
-
-// Operaciones 
-.boxOperaciones {
-    background-color: $colorFondo;
-    padding: 20px;
-    width: $boxResponsive;
-}
-
-//Condicionales
-$colorTitulo: dark;
-
-h1 {
-    @if $colorTitulo == dark {
-        color: white;
-        background-color: dark;
-    } @else if $colorTitulo == light{
-        color: blue;
-        background: aquamarine;
-    } @else {
-        color: tomato;
-        border: 2px solid violet;
-    }
-}
-
-// Ciclo For
-@for $i from 1 to 13 {
-    .col-#{$i} {
-    width: 100% / $i;
-    }
-}
-
-
-/* Each */
-// @each $color in red, green, blue {
-//     .bg-#{$background} {
-//         background-color: $background;
-//         color: #($color);
-//     }
-// }
-
-$red-social: (
-    fb: blue,
-    ig: violet,
-    tw: skyblue,
-);
-
-@each $nombre, $valor in $red-social {
-    .icon-#{$nombre} {
-        background-color: $valor;
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    div {
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            font-size: 4rem;
+        }
     }
 }
 
 .h1-ram {
     text-decoration: none;
-	color: rgb(0, 0, 0);
-	font-weight: 900;
-	font-size: 4rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 4rem;
     /* border-bottom: 4px solid black; */
 }
 
-//extend
-.extend {
-    background-color: black;
-    color: white;
-
-}
-
-.extend--color {
-    @extend .extend;
-    background-color: blue;
-}
-
-//mixin
-@mixin boton {
-    display: inline-block;
-    padding: 10px;
-    border: 2px solid tomato;
-}
-
-.btn--default {
-    @include btn;
-}
-
-
 .a-ram {
-  font-weight: bolder;
-  text-decoration: none;
-  color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    clor: black;
 }
 
 .fram1 {
@@ -153,43 +87,46 @@ main {
     
 }
 
-/* FLEX 1 */
-.flex {
+
+
+.flex{
     &.container {
-        width: 80vw;
+        // width: 80vw;
+        margin: 0 auto;
         height: auto;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: space-evenly;
+        flex-flow: row wrap;
+        justify-items: center;
+        
         align-items: stretch;
-        align-content: center;
         flex-basis: auto;
         margin-right:auto;
         margin-left:auto;
         border-radius: 5px;
+        background-color: aqua;
         
-    &-item {
-        margin-top: 10px;
-        width: auto;
-        height: auto;
-        justify-content: center;
-        margin-inline: 10px;
-    }
-    
-    &-item-item {
-        margin-top: 10px;
-        width: auto;
-        height: 28vh;
-        justify-content: center;
-        margin-right:auto;
-        margin-left:auto;
-    }
-    
-    &-item-item.especial {
-        display: none;
-        p {
-            padding-top: 10px;
-            padding-bottom: 10px;
+        &-item {
+            margin-top: 10px;
+            // width: auto;
+            // height: auto;
+            justify-self: center;
+            margin-inline: 10px;
+        }
+        
+        &-item-item {
+            margin-top: 10px;
+            width: auto;
+            height: 28vh;
+            justify-content: center;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        
+        &-item-item.especial {
+            display: none;
+            p {
+                padding-top: 10px;
+                padding-bottom: 10px;
             img{
                 display: block;
                 margin-left: auto;
@@ -233,7 +170,49 @@ main {
             margin-inline: 10px;
         }
     }
-    }
+}
+}
+
+
+$colores:(
+    principal:white,
+    secundario: blue,
+    tercero: violet, 
+);
+
+@mixin mix1 {
+    height: 200px;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+    
+.centrar-elemento {
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    @extend .centrar-elemento
+
+}
+
+.raro1 {
+    // background-color: aquamarine;
+    @extend .centrar-elemento;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: row;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.raro2 {
+    @include mix1;
+    background: aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .flex-titulo {
@@ -242,10 +221,13 @@ main {
     text-align: center;
     font-weight: 900;
     font-size: 40px;
+    color: map-get($colores,principal);
 }
 
-    /* Otros */
-    
+//////////////////////////////////////////////////
+
+/* Otros */
+
 table {
     border-spacing: 10px;
 }
@@ -283,3 +265,87 @@ footer {
     border-radius: 8px;
     /* border: solid 20px trasn; */
 }
+
+
+
+// Clase de SASS II 
+
+// vars
+// $colorFondo: #FFF;
+// $boxResponsive: 320px;
+
+// Operaciones 
+// .boxOperaciones {
+//     background-color: $colorFondo;
+//     padding: 20px;
+//     width: $boxResponsive;
+// }
+
+// Condicionales
+// $colorTitulo: dark;
+
+// h1 {
+//     @if $colorTitulo == dark {
+//         color: white;
+//         background-color: dark;
+//     } @else if $colorTitulo == light{
+//         color: blue;
+//         background: aquamarine;
+//     } @else {
+//         color: tomato;
+//         border: 2px solid violet;
+//     }
+// }
+
+// Ciclo For
+// @for $i from 1 to 13 {
+//     .col-#{$i} {
+//     width: 100% / $i;
+//     }
+// }
+
+
+/* Each */
+// @each $color in red, green, blue {
+//     .bg-#{$background} {
+//         background-color: $background;
+//         color: #($color);
+//     }
+// }
+
+// $red-social: (
+//     fb: blue,
+//     ig: violet,
+//     tw: skyblue,
+// );
+
+// @each $nombre, $valor in $red-social {
+//     .icon-#{$nombre} {
+//         background-color: $valor;
+//     }
+// }
+
+
+//extend
+// .extend {
+//     background-color: black;
+//     color: white;
+    
+// }
+
+// .extend--color {
+//     @extend .extend;
+//     background-color: blue;
+// }
+
+// //mixin
+// @mixin boton {
+//     display: inline-block;
+//     padding: 10px;
+//     border: 2px solid tomato;
+// }
+
+// .btn--default {
+    //     @include "";
+    // }
+    
