@@ -7,7 +7,7 @@
       <title>Descubre tu Viaje Musical</title>
       <link rel="icon" type="image/x-icon" href="./images/favicon.png">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-      <link rel="stylesheet" href="./sass/main.css">
+      <link rel="stylesheet" href="./css/main.css">
       <meta name="title" content="BEST TIME TRAVEL">
       <meta name="description" content="Has pensando en viajar al pasado y disfrutar de conciertos músicales. Imaginate tener la oportunidad y no saber a donde ir. Conoce tu Viaje Ideal en BTT"/>
       <meta name="keywords" content="viaje,tiempo,musica,historico"/>
@@ -28,13 +28,13 @@
     </head>
     
     <body>
-      <nav class="navbar navbar-expand-lg bg-white-70">
+      <nav class="navbar navbar-expand-lg bg-white-70 ">
         <div class="header__logo container-fluid ps-5 pe-5">
-          <a class="navbar-ram navbar-brand" href="index.html">BEST TIME TRAVEL</a>
+          <a class=" navbar-brand  navbar-ram" href="index.html">BEST TIME TRAVEL</a>
           <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
           </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link a-ram text-white" href="./pages/product.html">Timeline</a>
                   <a class="nav-link a-ram text-white" href="./pages/gps.html">Ubicación</a>
@@ -47,66 +47,76 @@
             </div>
       </nav>
           
-      <main>
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner center-block">
+              <div class="carousel-item active">
+                <img src="./images/concierto5.webp" class="d-block w-100" style="max-height: 600px; object-fit: cover; " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Conoce tu viaje ideal</h5>
+                  <p>Si tuvieras la oportunidad de viajar a cualquier concierto, cual seria tu opción.</p>
+                </div>
               </div>
-              <div class="carousel-inner center-block">
-                <div class="carousel-item active">
-                  <img src="./images/concierto5.webp" class="d-block w-100" style="max-height: 600px; object-fit: cover; " alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Conoce tu viaje ideal</h5>
-                    <p>Si tuvieras la oportunidad de viajar a cualquier concierto, cual seria tu opción.</p>
-                  </div>
+              <div class="carousel-item">
+                <img src="./images/concierto1.webp" class="d-block w-100" style="max-height: 600px; object-fit: cover; " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Woodstock, Nirvana o uno de SnoopDogg</h5>
+                  <p>Ve donde te llevarian tus gustos</p>
                 </div>
-                <div class="carousel-item">
-                  <img src="./images/concierto1.webp" class="d-block w-100" style="max-height: 600px; object-fit: cover; " alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Woodstock, Nirvana o uno de SnoopDogg</h5>
-                    <p>Ve donde te llevarian tus gustos</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/concierto3.webp" class="d-block w-100" style="max-height: 600px; object-fit: cover;" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Si puedieras volver al pasado, a que concierto irias</h5>
-                    <p>Vive la música y toma tu decisión</p>
-                    <button type="button" class="btn btn-light-90 pb-2">Atrevete</button>                    </div>
-                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/concierto3.webp" class="d-block w-100" style="max-height: 600px; object-fit: cover;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Si puedieras volver al pasado, a que concierto irias</h5>
+                  <p>Vive la música y toma tu decisión</p>
+                  <button type="button" class="btn btn-light-90 pb-2">Atrevete</button>                    </div>
               </div>
             </div>
-      </main>
+          </div>
+    </main>
 
 
-        <h1 class="display-2 text-center py-2 pt-3 h1-ram ">VIVE LA MÚSICA A TU GUSTO</h1>
-      <div class="container d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center">
-        <div class=" me-md-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgba(247, 210, 0, 0.507);">
-          <div class="my-3 py-3">
-            <h2 class="display-5 h1-ram">HIP HOP 90's</h2>
-            <p class="h4">Un poco de Hipiti Hop</p>
-            <a href="./pages/product.html" class="btn btn-outline-black active" tabindex="-1" role="button" aria-disabled="true">Let's Gooo</a>
+      <h1 class="display-2 text-center py-2 pt-3 h1-ram ">VIVE LA MÚSICA A TU GUSTO</h1>
+
+      <div class="container">
+        <div class="row row-sm-12">
+          <div class="">
+
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 sm-md-lg-12 justify-content-center">
+              <div class="  me-md-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden sm-md-lg-12" style="background-color: rgba(247, 210, 0, 0.507);">
+              <div class="my-3 py-3 ">
+                <h2 class="display-5 h1-ram">HIP HOP 90's</h2>
+              <p class="h4">Un poco de Hipiti Hop</p>
+              <a href="./pages/product.html" class="btn btn-outline-black active" tabindex="-1" role="button" aria-disabled="true">Let's Gooo</a>
+            </div>
+            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> 
+              <img src="./images/snoop.png" alt="" class="img-fluid d-block center-block " style="width: auto; height: 400px; display: inline;">
+            </div>
           </div>
-          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> 
-            <img src="./images/snoop.png" alt="" class="img-fluid d-block center-block " style="width: auto; height: 400px; display: inline;">
-          </div>
-        </div>
-        
-        <div class="bg-warning-80 me-md-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgba(247, 210, 0, 0.507);">
-          <div class="my-3 p-3">
-            <h2 class="display-5 h1-ram">ROCK 60'Ss</h2>
-            <p class="h4">Vamos a los 60's, los Beatles y Jendrix?.</p>
-            <a href="./pages/product.html" class="btn btn-outline-black active " tabindex="-1" role="button" aria-disabled="true">Vamos a Rockear</a>
+          
+          <div class=" me-md-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: rgba(247, 210, 0, 0.507);">
+            <div class="my-3 p-3">
+              <h2 class="display-5 h1-ram">ROCK 60'Ss</h2>
+              <p class="h4">Vamos a los 60's, los Beatles y Jendrix?.</p>
+              <a href="./pages/product.html" class="btn btn-outline-black active " tabindex="-1" role="button" aria-disabled="true">Vamos a Rockear</a>
             </div>
             <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-              <img src="./images/paul.png" alt="" class="img-fluid d-block center-block ">
+                <img src="./images/paul.png" alt="" class="img-fluid d-block center-block ">
+              </div>
             </div>
+          </div>
+          </div>
         </div>
       </div>
+
+
       <section class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 pb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 pb-5 pt-4">
               <p class="display-4 text-white text-center h1-ram justify-content-end my-auto">Disfruta Grandes Momentos</p>
                 <div class="col">
                   <div class="card h-100">
