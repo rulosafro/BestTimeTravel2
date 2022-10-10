@@ -246,21 +246,57 @@ section {
 }
 
 .ramaimg {
-    background-image: url(../images/concierto2.webp);
+    background-image: url(../images/molotov.jpg);
     width: 100%;
     height: auto;
     object-fit: cover;
+    object-position: top;
 }
 
 .ramaimg1 {
-    background-image: url(../images/concierto2.webp);
+    background-image: url(../images/Isla-de-Wight-1970.webp);
     width: 100%;
     height: auto;
     object-fit: cover;
+    object-position: bottom;
+    background-size: cover;
+}
+.ramaimg2 {
+    background-image: url(../images/Nirvana.jpg);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    background-size: cover;
+    
+}
+.ramaimg3 {
+    background-image: url(../images/Beatles.jpg);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    background-size: cover;
+}
+.ramaimg4 {
+    background-image: url(../images/charly3.jpg);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    background-size: cover;
 }
 
-// Uso de media query
+.ramaimg5 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    background-size: cover;
+}
 
+
+// Uso de media query
 
 //////////////////////////////////////////////////
 
